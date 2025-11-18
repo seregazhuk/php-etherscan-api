@@ -76,7 +76,7 @@ final class Proxy
     }
 
     /**
-     * @see https://docs.etherscan.io/api-endpoints/geth-parity-proxy#eth_getblockbynumber
+     * @see https://docs.etherscan.io/api-reference/endpoint/ethgetblockbynumber
      */
     public function getBlockByNumber(string $hexBlockNumber): BlockInfo
     {

@@ -114,3 +114,9 @@ $transactionInfo = $etherscan->proxy->getTransactionByHash('0x136f818dfe87b367ee
 ```php
 $currentBlock = $etherscan->proxy->getBlockNumber();
 ```
+
+[eth_getBlockByNumber](https://docs.etherscan.io/api-reference/endpoint/ethgetblockbynumber):
+
+```php
+$blockInfo = $etherscan->proxy->getBlockByNumber('0x10d4f');
+```
