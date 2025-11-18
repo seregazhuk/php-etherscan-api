@@ -10,6 +10,7 @@ PHP client for [Etherscan API](https://docs.etherscan.io) (and its families like
 - [Available bindings](#available-bindings)
     - [Accounts](#accounts)
     - [Contracts](#contracts)
+    - [Proxy](#proxy)
 
 ## Installation
 
@@ -100,3 +101,16 @@ $abi = $this->contracts->getAbi('0xBB9bc244D798123fDe783fCc1C72d3Bb8C189413');
 $sourceCode = $this->contracts->getSourceCode('0xBB9bc244D798123fDe783fCc1C72d3Bb8C189413');
 ```
 
+### Proxy
+
+[eth_getTransactionByHash](https://docs.etherscan.io/api-reference/endpoint/ethgettransactionbyhash):
+
+```php
+$transactionInfo = $etherscan->proxy->getTransactionByHash('0x136f818dfe87b367eee9890c162ef343dbd65e409aef102219a6091ba7e696d7');
+```
+
+[eth_blockNumber](https://docs.etherscan.io/api-reference/endpoint/ethblocknumber):
+
+```php
+$currentBlock = $etherscan->proxy->getBlockNumber();
+```

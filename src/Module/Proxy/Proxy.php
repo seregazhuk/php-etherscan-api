@@ -18,7 +18,7 @@ final class Proxy
     public function __construct(private readonly EtherscanClient $client) {}
 
     /**
-     * @see https://docs.etherscan.io/api-endpoints/geth-parity-proxy#eth_gettransactionbyhash
+     * @see https://docs.etherscan.io/api-reference/endpoint/ethgettransactionbyhash
      */
     public function getTransactionByHash(string $hash): TransactionByHashInfo
     {
@@ -64,7 +64,7 @@ final class Proxy
     }
 
     /**
-     * @see https://docs.etherscan.io/api-endpoints/geth-parity-proxy#eth_blocknumber
+     * @see https://docs.etherscan.io/api-reference/endpoint/ethblocknumber
      */
     public function getBlockNumber(): BigInteger
     {
