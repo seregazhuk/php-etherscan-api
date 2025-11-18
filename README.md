@@ -32,6 +32,14 @@ $isConfirmed = $currentBlock
 echo $isConfirmed ? 'Confirmed' : 'Not confirmed';
 ```
 
+Use Binance Smart Chain (testnet):
+
+```php
+$etherscanApi = new EtherscanApi('your-api-key', ChainId::BNB_SMART_CHAIN_TESTNET);
+```
+
+
+
 ## Available bindings
 
 ### Accounts
