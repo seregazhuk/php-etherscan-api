@@ -7,6 +7,9 @@ PHP client for [Etherscan API](https://docs.etherscan.io) (and its families like
 **Table of Contents**
 - [Installation](#installation)
 - [Quick Start](#quick-start)
+- [Available bindings](#available-bindings)
+    - [Accounts](#accounts)
+    - [Contracts](#contracts)
 
 ## Installation
 
@@ -74,3 +77,18 @@ $erc721Events = $this->accounts->getErc721TokenTransferEvents('0x6975be450864c02
 ```php
 $erc1155Events = $this->accounts->getErc1155TokenTransferEvents('0x83f564d180b58ad9a02a449105568189ee7de8cb', '0x76be3b62873462d2142405439777e971754e8e77');
 ```
+
+### Contracts
+
+[Get Contract ABI](https://docs.etherscan.io/api-reference/endpoint/getabi#get-contract-abi-for-verified-contract-source-codes):
+
+```php
+$abi = $this->contracts->getAbi('0xBB9bc244D798123fDe783fCc1C72d3Bb8C189413');
+```
+
+[Get Contract Source Code](https://docs.etherscan.io/api-reference/endpoint/getsourcecode):
+
+```php
+$sourceCode = $this->contracts->getSourceCode('0xBB9bc244D798123fDe783fCc1C72d3Bb8C189413');
+```
+

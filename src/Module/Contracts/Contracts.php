@@ -14,7 +14,7 @@ final class Contracts
     public function __construct(private readonly EtherscanClient $client) {}
 
     /**
-     * @see https://docs.etherscan.io/api-endpoints/contracts#get-contract-abi-for-verified-contract-source-codes
+     * @see https://docs.etherscan.io/api-reference/endpoint/getabi#get-contract-abi-for-verified-contract-source-codes
      */
     public function getAbi(string $address): string
     {
@@ -26,7 +26,7 @@ final class Contracts
     }
 
     /**
-     * @see https://docs.etherscan.io/api-endpoints/contracts#get-contract-source-code-for-verified-contract-source-codes
+     * @see https://docs.etherscan.io/api-reference/endpoint/getsourcecode
      *
      * @return ContractSourceCode[]
      */
