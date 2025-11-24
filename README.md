@@ -120,3 +120,9 @@ $currentBlock = $etherscan->proxy->getBlockNumber();
 ```php
 $blockInfo = $etherscan->proxy->getBlockByNumber('0x10d4f');
 ```
+
+[eth_sendRawTransaction](https://docs.etherscan.io/api-reference/endpoint/ethsendrawtransaction):
+
+```php
+$result = $this->proxy->sendRawTransaction('0xf904808000831cfde080');
+```
