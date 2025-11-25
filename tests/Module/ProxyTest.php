@@ -345,7 +345,7 @@ final class ProxyTest extends TestCase
                 }),
             )
             ->willReturn(new Response(200, [], $json));
-        $result = $this->proxy->getTransactionCountByNumber('0x10FB78');
+        $result = $this->proxy->getBlockTransactionCountByNumber('0x10FB78');
         $this->assertTrue((new BigInteger('0x3', 16))->equals($result));
     }
 

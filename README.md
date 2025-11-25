@@ -126,3 +126,9 @@ $blockInfo = $etherscan->proxy->getBlockByNumber('0x10d4f');
 ```php
 $result = $this->proxy->sendRawTransaction('0xf904808000831cfde080');
 ```
+
+[eth_getBlockTransactionCountByNumber](https://docs.etherscan.io/api-reference/endpoint/ethgetblocktransactioncountbynumber):
+
+```php
+$result = $this->proxy->getBlockTransactionCountByNumber('0x10FB78');
+```

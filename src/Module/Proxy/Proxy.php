@@ -150,7 +150,7 @@ final class Proxy
     /**
      * @see https://docs.etherscan.io/api-endpoints/geth-parity-proxy#eth_getblocktransactioncountbynumber
      */
-    public function getTransactionCountByNumber(string $hexBlockNumber): BigInteger
+    public function getBlockTransactionCountByNumber(string $hexBlockNumber): BigInteger
     {
         $response = $this->client->sendRequest(self::MODULE_NAME, 'eth_getBlockTransactionCountByNumber', ['tag' => $hexBlockNumber]);
         /** @var array{result: string} $json */
