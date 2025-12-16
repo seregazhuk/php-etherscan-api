@@ -160,7 +160,7 @@ final class Proxy
     }
 
     /**
-     * @see https://docs.etherscan.io/api-endpoints/geth-parity-proxy#eth_gettransactioncount
+     * @see https://docs.etherscan.io/api-reference/endpoint/ethgettransactioncount
      */
     public function getTransactionCount(string $address): BigInteger
     {
@@ -172,7 +172,7 @@ final class Proxy
     }
 
     /**
-     * @see https://docs.etherscan.io/api-endpoints/geth-parity-proxy#eth_gettransactionreceipt
+     * @see https://docs.etherscan.io/api-reference/endpoint/ethgettransactionreceipt
      */
     public function getTransactionReceipt(string $hash): TransactionReceipt
     {
@@ -232,7 +232,7 @@ final class Proxy
     }
 
     /**
-     * @see https://docs.etherscan.io/api-endpoints/geth-parity-proxy#eth_gasprice
+     * @see https://docs.etherscan.io/api-reference/endpoint/ethgasprice
      */
     public function getGasPrice(): BigInteger
     {

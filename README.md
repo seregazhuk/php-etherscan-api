@@ -132,3 +132,18 @@ $result = $this->proxy->sendRawTransaction('0xf904808000831cfde080');
 ```php
 $result = $this->proxy->getBlockTransactionCountByNumber('0x10FB78');
 ```
+
+[eth_getTransactionCount](https://docs.etherscan.io/api-reference/endpoint/ethgettransactioncount):
+```php
+$result = $this->proxy->getTransactionCount('0x4bd5900Cb274ef15b153066D736bf3e83A9ba44e');
+```
+
+[eth_getTransactionReceipt](https://docs.etherscan.io/api-reference/endpoint/ethgettransactionreceipt):
+```php
+$result = $this->proxy->getTransactionReceipt('0xf75e354c5edc8efed9b59ee9f67a80845ade7d0c');
+```
+
+[eth_gasPrice](https://docs.etherscan.io/api-reference/endpoint/ethgasprice):
+```php
+$result = $this->proxy->getGasPrice();
+```
